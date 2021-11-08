@@ -44,61 +44,66 @@ namespace EventApp
             // 
             // firstNameBox
             // 
-            this.firstNameBox.Location = new System.Drawing.Point(94, 45);
+            this.firstNameBox.Location = new System.Drawing.Point(70, 37);
+            this.firstNameBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.firstNameBox.Name = "firstNameBox";
-            this.firstNameBox.Size = new System.Drawing.Size(163, 22);
+            this.firstNameBox.Size = new System.Drawing.Size(123, 20);
             this.firstNameBox.TabIndex = 0;
             this.firstNameBox.TextChanged += new System.EventHandler(this.FirstNameVal);
-            this.firstNameBox.MouseEnter += new System.EventHandler(this.FirstNameVal);
             // 
             // lastNameBox
             // 
-            this.lastNameBox.Location = new System.Drawing.Point(94, 96);
+            this.lastNameBox.Location = new System.Drawing.Point(70, 78);
+            this.lastNameBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lastNameBox.Name = "lastNameBox";
-            this.lastNameBox.Size = new System.Drawing.Size(163, 22);
+            this.lastNameBox.Size = new System.Drawing.Size(123, 20);
             this.lastNameBox.TabIndex = 1;
             this.lastNameBox.TextChanged += new System.EventHandler(this.LastNameVal);
-            this.lastNameBox.MouseEnter += new System.EventHandler(this.LastNameVal);
             // 
             // firstNameLbl
             // 
             this.firstNameLbl.AutoSize = true;
-            this.firstNameLbl.Location = new System.Drawing.Point(12, 48);
+            this.firstNameLbl.Location = new System.Drawing.Point(9, 39);
+            this.firstNameLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.firstNameLbl.Name = "firstNameLbl";
-            this.firstNameLbl.Size = new System.Drawing.Size(76, 17);
+            this.firstNameLbl.Size = new System.Drawing.Size(57, 13);
             this.firstNameLbl.TabIndex = 2;
             this.firstNameLbl.Text = "First Name";
             // 
             // lastNameLbl
             // 
             this.lastNameLbl.AutoSize = true;
-            this.lastNameLbl.Location = new System.Drawing.Point(12, 96);
+            this.lastNameLbl.Location = new System.Drawing.Point(9, 78);
+            this.lastNameLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lastNameLbl.Name = "lastNameLbl";
-            this.lastNameLbl.Size = new System.Drawing.Size(76, 17);
+            this.lastNameLbl.Size = new System.Drawing.Size(58, 13);
             this.lastNameLbl.TabIndex = 3;
             this.lastNameLbl.Text = "Last Name";
             // 
             // firstNameValidLbl
             // 
             this.firstNameValidLbl.AutoSize = true;
-            this.firstNameValidLbl.Location = new System.Drawing.Point(91, 73);
+            this.firstNameValidLbl.Location = new System.Drawing.Point(68, 59);
+            this.firstNameValidLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.firstNameValidLbl.Name = "firstNameValidLbl";
-            this.firstNameValidLbl.Size = new System.Drawing.Size(0, 17);
+            this.firstNameValidLbl.Size = new System.Drawing.Size(0, 13);
             this.firstNameValidLbl.TabIndex = 4;
             // 
             // lastNameValidLbl
             // 
             this.lastNameValidLbl.AutoSize = true;
-            this.lastNameValidLbl.Location = new System.Drawing.Point(91, 121);
+            this.lastNameValidLbl.Location = new System.Drawing.Point(68, 98);
+            this.lastNameValidLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lastNameValidLbl.Name = "lastNameValidLbl";
-            this.lastNameValidLbl.Size = new System.Drawing.Size(0, 17);
+            this.lastNameValidLbl.Size = new System.Drawing.Size(0, 13);
             this.lastNameValidLbl.TabIndex = 5;
             // 
             // saveBtn
             // 
-            this.saveBtn.Location = new System.Drawing.Point(182, 137);
+            this.saveBtn.Location = new System.Drawing.Point(136, 111);
+            this.saveBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.saveBtn.Name = "saveBtn";
-            this.saveBtn.Size = new System.Drawing.Size(75, 23);
+            this.saveBtn.Size = new System.Drawing.Size(56, 19);
             this.saveBtn.TabIndex = 6;
             this.saveBtn.Text = "Save";
             this.saveBtn.UseVisualStyleBackColor = true;
@@ -107,19 +112,21 @@ namespace EventApp
             // studentGridView
             // 
             this.studentGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.studentGridView.Location = new System.Drawing.Point(12, 195);
+            this.studentGridView.Location = new System.Drawing.Point(9, 158);
+            this.studentGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.studentGridView.Name = "studentGridView";
             this.studentGridView.RowHeadersWidth = 51;
             this.studentGridView.RowTemplate.Height = 24;
-            this.studentGridView.Size = new System.Drawing.Size(507, 290);
+            this.studentGridView.Size = new System.Drawing.Size(353, 236);
             this.studentGridView.TabIndex = 7;
             this.studentGridView.SelectionChanged += new System.EventHandler(this.StudentGridView_Selected);
             // 
             // updateBtn
             // 
-            this.updateBtn.Location = new System.Drawing.Point(94, 137);
+            this.updateBtn.Location = new System.Drawing.Point(70, 111);
+            this.updateBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.updateBtn.Name = "updateBtn";
-            this.updateBtn.Size = new System.Drawing.Size(75, 23);
+            this.updateBtn.Size = new System.Drawing.Size(56, 19);
             this.updateBtn.TabIndex = 8;
             this.updateBtn.Text = "Update";
             this.updateBtn.UseVisualStyleBackColor = true;
@@ -127,9 +134,10 @@ namespace EventApp
             // 
             // deleteBtn
             // 
-            this.deleteBtn.Location = new System.Drawing.Point(278, 73);
+            this.deleteBtn.Location = new System.Drawing.Point(208, 59);
+            this.deleteBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.deleteBtn.Name = "deleteBtn";
-            this.deleteBtn.Size = new System.Drawing.Size(75, 23);
+            this.deleteBtn.Size = new System.Drawing.Size(56, 19);
             this.deleteBtn.TabIndex = 9;
             this.deleteBtn.Text = "Delete";
             this.deleteBtn.UseVisualStyleBackColor = true;
@@ -137,9 +145,9 @@ namespace EventApp
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(989, 506);
+            this.ClientSize = new System.Drawing.Size(742, 411);
             this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.updateBtn);
             this.Controls.Add(this.studentGridView);
@@ -150,6 +158,7 @@ namespace EventApp
             this.Controls.Add(this.firstNameLbl);
             this.Controls.Add(this.lastNameBox);
             this.Controls.Add(this.firstNameBox);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "EventApp";
             ((System.ComponentModel.ISupportInitialize)(this.studentGridView)).EndInit();

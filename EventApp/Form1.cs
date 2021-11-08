@@ -41,10 +41,6 @@ namespace EventApp
             dataGrid.Update();
             dataGrid.DataSource = students;
             dataGrid.Update();
-            if (students.Count == 0)
-            {
-                dataGrid.ClearSelection();
-            }
         }
         private void StudentGridView_Selected(object sender, EventArgs e)
         {
@@ -55,16 +51,8 @@ namespace EventApp
                     studentGridView.ClearSelection();
                 }
             }
-            if (studentGridView.CurrentCell != null)
-            {
-                firstNameBox.Text = studentGridView.CurrentRow.Cells[1].Value.ToString();
-                lastNameBox.Text = studentGridView.CurrentRow.Cells[2].Value.ToString();
-            }
-            else
-            {
-                firstNameBox.Text = string.Empty;
-                lastNameBox.Text = string.Empty;
-            }
+            firstNameBox.Text = studentGridView.CurrentRow.Cells[1].Value.ToString();
+            lastNameBox.Text = studentGridView.CurrentRow.Cells[2].Value.ToString();
         }
 
         private void FirstNameVal(object sender, EventArgs e)
