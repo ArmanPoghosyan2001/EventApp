@@ -48,6 +48,13 @@ namespace EventApp
         }
         private void StudentGridView_Selected(object sender, EventArgs e)
         {
+            for (int i = 0; i < studentGridView.Columns.Count; i++)
+            {
+                if (studentGridView.CurrentCell == studentGridView[i, studentGridView.Rows.Count - 1])
+                {
+                    studentGridView.ClearSelection();
+                }
+            }
             if (studentGridView.CurrentCell != null)
             {
                 firstNameBox.Text = studentGridView.CurrentRow.Cells[1].Value.ToString();
@@ -106,10 +113,7 @@ namespace EventApp
                 LastName = lastNameBox.Text
             };
             _studentService.Remove(student);
-            if (studentGridView.CurrentCell == studentGridView[0, studentGridView.Rows.Count-1])
-            {
-                studentGridView.CurrentCell = null;
-            }
+
             List<Student> students = _studentService.GetAll();
             UpdateGrid(studentGridView, students);
         }
